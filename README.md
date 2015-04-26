@@ -25,8 +25,8 @@ Save the results into defaultworking directory @ "UciDataset" folder as
 ## Cleaned Data
 
   After running run_analysis.R the tidy data will be save at the following text files
-     tidy_xdata.txt
-     tidy_signaldata.txt
+    - tidy_xdata.txt
+    - tidy_signaldata.txt
 
 # Notes
 ##tidy_xdata
