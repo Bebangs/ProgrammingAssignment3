@@ -191,7 +191,7 @@ tidy_signaldata <- rbind(test_signaldata, train_signaldata)
 #         $ Mean       : num  -0.362 -0.121 -0.521 -0.239 0.111 ...
 #         $ Std        : num  -0.512 -0.267 -0.462 NA NA ...
 
-#see - tidy_singaldata
+#see - tidy_signaldata
 #         'data.frame':  152064 obs. of  7 variables:
 #           $ Volunteers : chr  "test" "test" "test" "test" ...
 #         $ RowID      : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -222,7 +222,7 @@ tidy_signaldata <- rbind(test_signaldata, train_signaldata)
 #         $ Mean       : num  -0.362 -0.121 -0.521 -0.239 0.111 ...
 #         $ Std        : num  -0.512 -0.267 -0.462 NA NA ...
 
-#see - tidy_singaldata
+#see - tidy_signaldata
 #         'data.frame':  152064 obs. of  7 variables:
 #           $ Volunteers : chr  "test" "test" "test" "test" ...
 #         $ RowID      : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -242,7 +242,8 @@ tidy_signaldata <- rbind(test_signaldata, train_signaldata)
 #******************************************************************************************************************************
 
 
-
+write.table(tidy_xdata, file = "./tidy_xdata.txt")
+write.table(tidy_signaldata, file = "./tidy_signaldata.txt")
 
 
 
