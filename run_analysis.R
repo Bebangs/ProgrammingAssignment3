@@ -172,14 +172,14 @@ tidy_xtrain  <- x_train %>%
 
 
 #******************************************************************************************************************************
-#STEP4 *** Merges the training and the test sets to create one data set. 
+#STEP3 *** Merges the training and the test sets to create one data set. 
 #****************************************************************************************************************************** 
 tidy_xdata <- rbind(tidy_xtest, tidy_xtrain)
 tidy_signaldata <- rbind(test_signaldata, train_signaldata) 
 
 
 #******************************************************************************************************************************
-#STEP5 *** Extracts only the measurements on the mean and standard deviation for each measurement. 
+#STEP4 *** Extracts only the measurements on the mean and standard deviation for each measurement. 
 #****************************************************************************************************************************** 
 #see - tidy_xdata
 #         'data.frame':  18308 obs. of  7 variables:
@@ -203,14 +203,14 @@ tidy_signaldata <- rbind(test_signaldata, train_signaldata)
 
 
 #******************************************************************************************************************************
-#STEP6 *** Uses descriptive activity names to name the activities in the data set
+#STEP5 *** Uses descriptive activity names to name the activities in the data set
 #******************************************************************************************************************************
 #see - tidy_xdata 
 #         $ Activity   : Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
 
 
 #******************************************************************************************************************************
-#STEP7 *** Appropriately labels the data set with descriptive variable names. 
+#STEP6 *** Appropriately labels the data set with descriptive variable names. 
 #******************************************************************************************************************************
 #see - tidy_xdata
 #         'data.frame':  18308 obs. of  7 variables:
@@ -237,13 +237,13 @@ tidy_signaldata <- rbind(test_signaldata, train_signaldata)
 
 
 #******************************************************************************************************************************
-#STEP8 *** From the data set in STEP 7, creates a second, independent tidy data set with the average 
+#STEP7 *** From the data set in STEP 6, creates a second, independent tidy data set with the average 
 #          of each variable for each activity and each subject.
 #******************************************************************************************************************************
 
 
-write.table(tidy_xdata, file = "./tidy_xdata.txt")
-write.table(tidy_signaldata, file = "./tidy_signaldata.txt")
+write.table(tidy_xdata, file = "./tidy_xdata.txt",  row.names = FALSE)
+write.table(tidy_signaldata, file = "./tidy_signaldata.txt",  row.names = FALSE)
 
 
 
