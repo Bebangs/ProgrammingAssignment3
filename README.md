@@ -14,13 +14,13 @@ Original data:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FU
 
 Save the results into defaultworking directory @ "UciDataset" folder as 
  
-  'Sample 
-  $UciDataset\activity_labels.text
-  $UciDataset\features_info.txt
-  $UciDataset\features.txt
-  $UciDataset\README.txt
-  $UciDataset\test\
-  $UciDataset\train\
+  |Sample 
+  |UciDataset\activity_labels.text
+  |UciDataset\features_info.txt
+  |UciDataset\features.txt
+  |UciDataset\README.txt
+  |UciDataset\test\
+  |UciDataset\train\
   
  
 ## Cleaned Data
